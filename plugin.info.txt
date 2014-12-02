@@ -1,0 +1,7 @@
+base   skilltagicon
+author Michael Große
+email  grosse@cosmocode.de
+date   2014-12-02
+name   skilltagicon plugin
+desc   show an icon prominently based on tags given to a site
+url    https://www.dokuwiki.org/plugin:skilltagicon
