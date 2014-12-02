@@ -5,4 +5,6 @@
  * @author Michael Große <grosse@cosmocode.de>
  */
 
-$conf['fixme']    = 'FIXME';
+$conf['easy_tag']    = 'skill>basic';
+$conf['intermediate_tag']    = 'skill>intermediate';
+$conf['expert_tag']    = 'skill>expert';

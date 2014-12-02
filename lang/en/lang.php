@@ -5,11 +5,10 @@
  * @author Michael Große <grosse@cosmocode.de>
  */
 
-// menu entry for admin plugins
-// $lang['menu'] = 'Your menu entry';
-
 // custom language strings for the plugin
-// $lang['fixme'] = 'FIXME';
+$lang['easy_page'] = 'This page has been tagged as low difficulty page.';
+$lang['intermediate_page'] = 'This page has been tagged as intermediate difficulty page.';
+$lang['expert_page'] = 'This page has been tagged as expert difficulty page.';
 
 
 

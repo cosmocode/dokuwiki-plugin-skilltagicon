@@ -6,7 +6,9 @@
  */
 
 // keys need to match the config setting name
-// $lang['fixme'] = 'FIXME';
+$lang['easy_tag'] = 'Tag-name for easy pages';
+$lang['intermediate_tag'] = 'Tag-name for intermediate pages';
+$lang['expert_tag'] = 'Tag-name for expert pages';
 
 
 
