@@ -63,7 +63,7 @@ class action_plugin_skilltagicon_icon extends DokuWiki_Action_Plugin {
         }
 
         if ($icon !== false) {
-            $icon_html = '<img src="lib/plugins/skilltagicon/icon/' . $icon . '" alt="" title="' . $icon_title . '">';
+            $icon_html = '<img src="lib/plugins/skilltagicon/icon/' . $icon . '" alt="" title="' . $icon_title . '" class="skilltagicon">';
             $event->data = $icon_html . $event->data;
         }
     }
