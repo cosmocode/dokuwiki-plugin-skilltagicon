@@ -41,11 +41,11 @@ class action_plugin_skilltagicon_icon extends DokuWiki_Action_Plugin {
 
         $tags = plugin_load('helper', 'tagging');
         if(is_null($tags)) {
-            msg('The skilltagicon plugin needs the tagging plugin', -1);
+            msg($this->getLang('tagging_missing'), -1);
             return false;
         }
         $tags = $tags->findItems(array('pid' => $ID),'tag');
-        
+
         $easy_tag = $this->getConf('easy_tag');
         $intermediate_tag = $this->getConf('intermediate_tag');
         $expert_tag = $this->getConf('expert_tag');
