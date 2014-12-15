@@ -6,9 +6,9 @@
  */
 
 // keys need to match the config setting name
-$lang['easy_tag'] = 'Tag-name for easy pages';
-$lang['intermediate_tag'] = 'Tag-name for intermediate pages';
-$lang['expert_tag'] = 'Tag-name for expert pages';
+$lang['easy_tag'] = 'Tag for easy pages';
+$lang['intermediate_tag'] = 'Tag for intermediate pages';
+$lang['expert_tag'] = 'Tag for expert pages';
 
 
 
