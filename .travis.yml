@@ -15,5 +15,5 @@ before_install:
 install: sh travis.sh
 script: cd _test && mkdir -p build/logs && phpunit --stderr --group plugin_skilltagicon --coverage-clover build/logs/clover.xml
 after_script: 
- - echo "src_dir: ." >> .coveralls.yml
+ - cp -v ../lib/plugins/skilltagicon/.coveralls.yml ./
  - php ../lib/plugins/skilltagicon/vendor/bin/coveralls -v
