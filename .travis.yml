@@ -10,4 +10,5 @@ env:
   - DOKUWIKI=stable
 before_install: wget https://raw.github.com/splitbrain/dokuwiki-travis/master/travis.sh
 install: sh travis.sh
-script: cd _test && phpunit --stderr --group plugin_skilltagicon
+script: cd _test && mkdir -P build/logs && phpunit --stderr --group plugin_skilltagicon --coverage-clover build/logs/clover.xml
+after_script: php vendor/bin/coveralls -v
