@@ -11,11 +11,12 @@ env:
 before_install:
  - wget https://raw.github.com/splitbrain/dokuwiki-travis/master/travis.sh
  - wget http://getcomposer.org/composer.phar
+ - ls -al
  - php composer.phar install --dev --no-interaction
 install: sh travis.sh
 script: cd _test && mkdir -p build/logs && phpunit --stderr --group plugin_skilltagicon --coverage-clover build/logs/clover.xml
 after_script: 
  - pwd
- - ls /home/travis/build/micgro42/dokuwiki-plugin-skilltagicon/lib/plugins/skilltagicon/
+ - ls -la /home/travis/build/micgro42/dokuwiki-plugin-skilltagicon/lib/plugins/skilltagicon/
  - cp -v /home/travis/build/micgro42/dokuwiki-plugin-skilltagicon/lib/plugins/skilltagicon/.coveralls.yml ./
  - php ../lib/plugins/skilltagicon/vendor/bin/coveralls -v
