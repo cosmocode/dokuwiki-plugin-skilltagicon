@@ -16,5 +16,6 @@ install: sh travis.sh
 script: cd _test && mkdir -p build/logs && phpunit --stderr --group plugin_skilltagicon --coverage-clover build/logs/clover.xml
 after_script: 
  - pwd
- - cp -v ../lib/plugins/skilltagicon/.coveralls.yml ./
+ - ls /home/travis/build/micgro42/dokuwiki-plugin-skilltagicon/lib/plugins/skilltagicon/
+ - cp -v /home/travis/build/micgro42/dokuwiki-plugin-skilltagicon/lib/plugins/skilltagicon/.coveralls.yml ./
  - php ../lib/plugins/skilltagicon/vendor/bin/coveralls -v
