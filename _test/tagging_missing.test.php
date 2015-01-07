@@ -22,7 +22,7 @@ class tagging_missing_skilltagicon_test extends DokuWikiTest {
         saveWikiText('start', '===== Some Headline =====', 'Test initialization');
         $response = $request->post($input);
         $this->assertTrue(
-            strpos($response->getContent(), '===== Some Headline =====') !== false,
+            strpos($response->getContent(), 'Some Headline') !== false,
             'This tests the test and should always succeed.'
         );
         $this->assertTrue(
