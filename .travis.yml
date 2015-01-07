@@ -9,7 +9,7 @@ env:
   - DOKUWIKI=master
   - DOKUWIKI=stable
 before_install:
- - wget https://raw.github.com/splitbrain/dokuwiki-travis/master/travis.sh
+ - wget https://raw.github.com/micgro42/dokuwiki-travis/master/travis.sh
  - wget http://getcomposer.org/composer.phar
  - ls -al
  - php composer.phar install --dev --no-interaction
