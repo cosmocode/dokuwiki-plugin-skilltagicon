@@ -25,3 +25,5 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 See the COPYING file in your DokuWiki folder for details
+
+[![Coverage Status](https://img.shields.io/coveralls/micgro42/dokuwiki-plugin-skilltagicon.svg)](https://coveralls.io/r/micgro42/dokuwiki-plugin-skilltagicon)
