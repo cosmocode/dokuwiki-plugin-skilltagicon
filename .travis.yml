@@ -18,5 +18,7 @@ script: cd _test && mkdir -p build/logs && phpunit --stderr --group plugin_skill
 after_script: 
  - pwd
  - ls -la /home/travis/build/micgro42/dokuwiki-plugin-skilltagicon/lib/plugins/skilltagicon/
+ - ls -la
  - cp -v /home/travis/build/micgro42/dokuwiki-plugin-skilltagicon/lib/plugins/skilltagicon/.coveralls.yml ./
+ - cp -vr build/ /home/travis/build/micgro42/dokuwiki-plugin-skilltagicon/lib/plugins/skilltagicon/
  - php ../lib/plugins/skilltagicon/vendor/bin/coveralls -v
